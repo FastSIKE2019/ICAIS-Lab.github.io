@@ -22,6 +22,7 @@
    git commit -m '描述'
    git push origin <branchName>
    ```
+
 5. create pull request
 
       <img src="images/pull_req.JPG" width=80%>
@@ -34,3 +35,4 @@
 4. `./papers.html`中可以增加文章;
 5. `./events.html`中可以增加活动内容;
 6. 如有意见/需求，可提**issue**。
+
