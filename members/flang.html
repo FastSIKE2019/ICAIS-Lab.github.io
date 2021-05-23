@@ -10,6 +10,7 @@
 <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
 <link href="../css/base.css" rel="stylesheet">
 <link href="../extends/extends.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./flang_data/style/styles.css">
 <script type="text/javascript" src="../extends/extends.js"></script>
 <link href="../css/media.css" rel="stylesheet">
 <!--[if lt IE 9]>
@@ -23,6 +24,71 @@
 		DD_belatedPNG.fix('.site-logo,.search-submit')
 	</script>
 <![endif]-->
+
+<style>
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 75%;
+}
+
+.right {
+  width: 25%;
+}
+
+.left_g {
+  width: 20%;
+}
+
+.right_g {
+  width: 80%;
+}
+
+.split10 {
+  width: 10%;
+}
+
+.split20 {
+  width: 20%;
+}
+
+.split25 {
+  width: 25%;
+}
+
+.split35 {
+  width: 35%;
+}
+
+.split40 {
+  width: 40%;
+}
+
+.split52 {
+  width: 52%;
+}
+
+.split48 {
+  width: 48%;
+}
+
+.half {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+
 </head>
 <body class="wp-info-page">
 <!--头部开始-->
@@ -106,8 +172,33 @@
           <h3 class="arti-title">Email: flang@nju.edu.cn</h3>
           <!-- <p class="arti-metas"><span class="arti-update">时间：{发布时间}</span><span class="arti-views">浏览：{动态浏览次数}</span></p> 
           -->
+
           <div class="entry">
             <article class="read">
+              <div class="hero">
+                <!-- <h2 class="language-change"><a href="./index.html">English</a></h2> -->
+                <div class="row">
+                <div class="column split25">
+                  <div class="quick-link">
+                    <a href="#sec:reint">研究方向</a><p></p>
+                  </div>
+                </div>
+                <div class="column split25">
+                  <div class="quick-link">
+                    <a href="#sec:pub">论文</a><p></p>
+                  </div>
+                </div>
+                <div class="column split25">
+                  <div class="quick-link">
+                    <a href="#sec:demo">演示</a><p></p>
+                  </div>
+                </div>
+                <div class="column split25">
+                  <div class="quick-link">
+                    <a href="#sec:soft">软件发布</a><p></p>
+                  </div>
+                </div>
+              </div>
               <div class="wp_articlecontent">
                 <p><img src="fenglang2.jpg"></p>
                 <p> 冯浪，博士，南京大学电子科学与工程学院副研究员。2020年8月博士毕业于美国Texas A&M University。2016年7月本科毕业于电子科技大学。
@@ -116,11 +207,177 @@
                   2019年5至8月于Cadence Design Systems总部从事开发RTL编译工具Genus的工作。
                   担任TCAD、VLSI Systems、ASPDAC、Integration、High Technology Letters、Microelectronics Reliability等期刊和会议的审稿人。
                   目前从事体系架构安全、高层次综合等方向。
-                </p>    
-                <a href="http://flwave.github.io" style="color: #548dd4;">更多论文、设计演示等信息</a>                         
+                </p>                     
               </div>
             </article>
           </div>
+          
+          <div class="container">
+            <div class="hero">
+              <a name="sec:reint"></a>
+              <h2 class="section-title">研究方向</h2>
+              <div class="list-card">
+                <div>
+                  <topic>+ 计算机体系架构安全</topic>
+                </div>
+                <p></p>
+                <div>
+                  <topic>+ 高层次综合中的设计空间搜索（DSE）问题</topic>
+                </div>
+                <p></p>
+                <div>
+                  <topic>+ 人工智能（AI）加速器设计自动化</topic>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container">
+            <div class="hero">
+              <a name="sec:pub"></a>
+              <h2 class="section-title">论文</h2>
+              <div class="list-card">
+                <ptitle class="year">2021</ptitle>
+                <div>
+                  <ptitle>FastCFI: Real-Time Control-Flow Integrity using FPGA without Code Instrumentation</ptitle><p></p>
+                  <pauthor><strong>Lang Feng</strong>, Jeff Huang, Jiang Hu and Abhijith Reddy</pauthor><p></p>
+                  <pjournal>ACM Transactions on Design Automation of Electronic Systems (TODAES)</pjournal>
+                  <a href="./flang_data/paper/7 FastCFI Real-Time Control-Flow Integrity Using FPGA Without Code Instrumentation.pdf">[pdf]</a>
+                </div>
+              </div>
+              <div class="list-card">
+                <ptitle class="year">2021</ptitle>
+                <div>
+                  <ptitle>Toward Taming the Overhead Monster for Data-Flow Integrity</ptitle><p></p>
+                  <pauthor><strong>Lang Feng</strong>, Jiayi Huang, Jeff Huang, Jiang Hu</pauthor><p></p>
+                  <pjournal>arXiv Preprint</pjournal>
+                  <a href="./flang_data/paper/6 Toward Taming the Overhead Monster for Data-Flow Integrity.pdf">[pdf]</a>
+                </div>
+              </div>
+              <div class="list-card">
+                <ptitle class="year">2020</ptitle>
+                <div>
+                  <ptitle>How Much Does Regularity Help FPGA Placement?</ptitle><p></p>
+                  <pauthor>Hongxin Kong, <strong>Lang Feng</strong>, Chunhua Deng, Bo Yuan and Jiang Hu</pauthor><p></p>
+                  <pjournal>International Conference on Field Programmable Technology (FPT)</pjournal>
+                  <a href="./flang_data/paper/5 How Much Does Regularity Help FPGA Placement.pdf">[pdf]</a>
+                </div>
+              </div>
+              <div class="list-card">
+                <ptitle class="year">2019</ptitle>
+                <div>
+                  <ptitle>FastCFI: Real-Time Control Flow Integrity using FPGA without Code Instrumentation</ptitle><p></p>
+                  <pauthor><strong>Lang Feng</strong>, Jeff Huang, Jiang Hu and Abhijith Reddy</pauthor><p></p>
+                  <pjournal>International Conference on Runtime Verification</pjournal>
+                  <a href="./flang_data/paper/4 FastCFI Real-Time Control Flow Integrity Using FPGA Without Code Instrumentation.pdf">[pdf]</a>
+                </div>
+              </div>
+              <div class="list-card">
+                <ptitle class="year">2019</ptitle>
+                <div>
+                  <ptitle>Layout Recognition Attacks on Split Manufacturing</ptitle><p></p>
+                  <pauthor>Wenbin Xu, <strong>Lang Feng</strong>, Jeyavijayan (JV) Rajendran and Jiang Hu</pauthor><p></p>
+                  <pjournal>IEEE Asia and South Pacific Design Automation Conference (ASPDAC)</pjournal>
+                  <a href="./flang_data/paper/3 Layout Recognition Attacks on Split Manufacturing.pdf">[pdf]</a>
+                </div>
+              </div>
+              <div class="list-card">
+                <ptitle class="year">2018</ptitle>
+                <div>
+                  <ptitle>Exploring Serverless Computing for Neural Network Training</ptitle><p></p>
+                  <pauthor><strong>Lang Feng</strong>, Prabhakar Kudva, Dilma Da Silva and Jiang Hu</pauthor><p></p>
+                  <pjournal>IEEE International Conference on Cloud Computing (IEEE Cloud)</pjournal>
+                  <a href="./flang_data/paper/2 Exploring Serverless Computing for Neural Network Training.pdf">[pdf]</a>
+                </div>
+              </div>
+              <div class="list-card">
+                <ptitle class="year">2017</ptitle>
+                <div>
+                  <ptitle>Making Split Fabrication Synergistically Secure and Manufacturable</ptitle><p></p>
+                  <pauthor><strong>Lang Feng</strong>, Yujie Wang, Wai-Kei Mak, Jeyavijayan (JV) Rajendran and Jiang Hu</pauthor><p></p>
+                  <span>IEEE/ACM International Conference on Computer-Aided Design (ICCAD)</span>
+                  <a href="./flang_data/paper/1 Making Split Fabrication Synergistically Secure and Manufacturable.pdf">[pdf]</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container">
+            <a name="sec:demo"></a>
+            <h2 class="section-title">演示</h2>
+            <div class="row">
+              <div class="column split52" style="background-color:rgb(255,255,255);">
+              <div class="list-card">
+                <div>
+                  <dtitle>控制流完整性验证系统</dtitle><p></p>
+                  <dintro>控制流完整性（CFI）为限制计算机程序的指令跳转与编程者设计初衷一致的标准。FastCFI为一个硬件辅助的CFI实时验证系统。
+                    此系统由一个ARM处理器与一个FPGA组成，在实现高精确度低延时的CFI实时验证的同时，拥有几乎为0的性能开销。
+                    使用FastCFI时，被验证的用户程序运行在ARM处理器上，并由FPGA进行实时CFI验证。</dintro>
+                </div>
+              </div>
+              </div>
+              <div class="column split48" style="background-color:rgb(255,255,255);">
+              <div class="list-card">
+                <div>
+                  <dtitle>数据流完整性验证系统</dtitle><p></p>
+                  <dintro>数据流完整性（DFI）为保障计算机运行时读取的数据被合法写入的标准。通过修改RISC-V处理器以及编译流程与操作系统，
+                    实现了高性能的DFI验证系统。此系统为自从2006年提出DFI后，首个低性能开销（<20%）的完整DFI实时验证系统。</dintro>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column split52" style="background-color:rgb(255,255,255);">
+              <div class="list-card">
+                <div>
+                  <video width="92%"  controls>
+                    <source src="./flang_data/demo/democfi.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              </div>
+              <div class="column split48" style="background-color:rgb(255,255,255);">
+              <div class="list-card">
+                <div>
+                  <video width="100%" controls>
+                    <source src="./flang_data/demo/demodfi.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container">
+            <a name="sec:soft"></a>
+            <h2 class="section-title">软件发布</h2>
+          
+            <div class="list-card">
+              <ptitle class="year">2019</ptitle>
+              <div>
+                <ptitle>FastCFI: 实时控制流完整性验证系统</ptitle><p></p>
+                <pauthor>为一个低检测延时、低性能开销、无软件改动、无误报的精细CFI验证系统。</pauthor><p></p>
+                <pjournal>https://github.com/flwave/FastCFI</pjournal>
+              </div>
+            </div>
+            <div class="list-card">
+              <ptitle class="year">2019</ptitle>
+              <div>
+                <ptitle>无服务神经网络训练</ptitle><p></p>
+                <pauthor>为首个基于无服务计算的神经网络训练任务部署的程序。</pauthor><p></p>
+                <pjournal>https://github.com/flwave/serverless_neural_network</pjournal>
+              </div>
+            </div>
+            <div class="list-card">
+              <ptitle class="year">2017</ptitle>
+              <div>
+                <ptitle>分离制造的网络流攻击程序</ptitle><p></p>
+                <pauthor>目前最先进的分离制造攻击程序。</pauthor><p></p>
+                <pjournal>https://github.com/seth-tamu/network_flow_attack</pjournal>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
